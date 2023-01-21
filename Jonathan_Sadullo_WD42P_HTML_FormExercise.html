@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpport" content="width=device-width, initial-scale=1, 
+        shrink-to-fit=yes">
+    <meta name="description" content="School Registration Form, ABC Daycare School">
+    <meta name="author" content="Jonathan Sadullo">
+    <meta name="keywords" content="School Registration Form">
+
+    <title><h2>School Registration Form</h2></title>
+	
+	<link rel="stylesheet" media="all" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" media="all" href="vendor/mdi-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" media="all" href="vendor/font-awesome-4.7/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/
+        css?family-Popins:100,100i,200,200i,300,300i,400,400i,500,500i,
+        600,600i700,700i,800,800i900,900i">
+    <link rel="stylesheet" media="all" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/
+        bootstrap.min.css">
+    <link rel="stylesheet" media="all" href="vendor/datepicker/daterangepicker.css">
+	
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/
+        bootstrap.min.js" integrity="sha384-cuYeSxntonzOPPNlHhBs68uyIAVp
+        IIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous">
+        </script>
+
+    <link rel="shortcut icon" type="image" 
+    href="https://github.com/Othniel46/Jonathan-Sadullo-WD42P-/blob/main/bgpic.jpg">
+
+    <link rel="stylesheet" media="all" href="css/min.css">
+    <script>
+
+        window.load = function () {
+
+            var $ = new City();
+            $.showProvinces("#province");
+            $.showCities("#city");
+
+            console.log($.getProvinces());
+
+            console.log($.getAllCities());
+
+            (e.g Baguio City)
+            console.log($.getCities("Baguio City"));
+
+        }
+    </script>
+    <style>
+
+        div { 
+            text-align: center;
+            background-image: url(https://github.com/Othniel46/
+            JonathanSadullo_WD42P_HTML_FormExercise.html/natan.jpg);
+            }
+            h4 {
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680"></div>
+        <div class="card card-4">
+            <div class="card-body">
+                <h2 class="title">Student Registration Form</h2>
+                <h4>Child's Details</h4>
+                <br>
+                <form method="POST" class="needs-validation" no validate>
+                    <div class="row row-space">
+                                <label class="form-label" for="validationCustom01">
+                                   </label>
+                                <div class="valid-feedback">
+                                </div>
+                                <div class="invalid-feedback">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-2">
+                        <div class="input-group-flex">
+							<label for="first-name">First Name</label>
+                            <input type="text" name="first-name"
+                            id="first-name" placeholder="Enter your first name">
+                            <label for="midle-name">Middle Name</label>
+                            <input type="text" name="middle-name"
+                            id="middle-name" placeholder="Enter your midle name">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name"
+                            id="last-name"placeholder="Enter your last name">                            
+                        </div>
+                      </div>
+                    
+                    <br>
+                    <div class="row row-space">
+                    <div class="col-2">
+                    <div class="input-group-icon">
+                        <label class="label">Date of Birth</label>
+                            <input class="input--style-4 js-datepicker"
+                            type="text" name="birthday" placeholder="Click Here"
+                             required>
+                            <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar">
+                            </i>
+                            <div class="p-t-10">
+                            <div class="valid-feedback">
+                            </div>
+                            <div class="invalid-feedback">
+                            </div>
+                         </div>
+                        </div>
+                     </div>
+                   </div>
+                <div class="col-2">
+                    <div class="input-group">
+                        <label class="label">Gender</label>
+                        <div class="p-t-10">
+                            <label class="radio-container m-r-45">
+                                "Male "
+                                <input type="radio" checked="checked"
+                                 name="gender" required>
+                                 <span class="checkmark"> 
+                                 </span>
+                            </label>
+                            <label class="radio-container m-r-45">
+                                "Female "
+                                <input type="radio" checked="checked"
+                                 name="gender" required>
+                                 <span class="checkmark"> 
+                                 </span>
+                            </label>
+                            <label class="radio-container m-r-45">
+                                "LGBT "
+                                <input type="radio" checked="checked"
+                                 name="gender" required>
+                                 <span class="checkmark"> 
+                                 </span>
+                            </label>
+                        </div>
+                    </div>
+                 </div>
+            <div class="row row-space">
+                <div class="col-12">
+                    <label class="label">Home Address</label>
+                    <br>
+                    <label for="inputAddress" class="form-label">
+                        Address</label>
+                        <input type="text" class="form-control" id="inputAddress"
+                        placeholder="1234 Main Street" required>
+                        <label for="inputAddress2" class="form-label">
+                            Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                         placeholder="Apartment,studio, or floor">
+                         <label for="inputState" class="form-label">
+                            Province</label>
+                        <select id="province" class="form-select slist"
+                             required> 
+                             <option selected disabled>Select Province</option>
+                             <option selected disabled>Benguet</option>
+                             <option selected disabled>Cavite</option>
+                             <option selected disabled>Isabela</option>
+                             <option selected disabled>Laguna</option>
+                             <option selected disabled>Metro Manila</option>
+                        </select>
+                        <div class="valid-feedback">
+                        </div>
+                        <div class="invalid-feedback">
+                        </div>
+                     </div>
+                    </div>
+                      <div class="col-12">
+                        <label for="inputState" class="form-label">
+                            City</label>
+                            <select id="city" class="form-select slist"
+                            required> 
+                            <option selected disabled>Select City / 
+                             Municipality</option>
+                             <option selected disabled>Baguio City</option>
+                          <option selected disabled>Carmona City</option>
+                          <option selected disabled>Ilagan City</option>
+                          <option selected disabled>Taguig City</option>
+                          <option selected disabled>Muntinlupa City</option>
+                          <option selected disabled>Santa Rosa City</option>
+                       </select>
+                              <label for="inputZip" class="form-label">
+                                Zip</label> 
+                              <input type="text" class="form-control" 
+                              id="inputZip" placeholder="2009" 
+                              onkeypress="return onlyNumberKey(event)" 
+                              required>
+                                <div class="valid-feedback">
+                               </div> 
+                               <div class="invalid-feedback">
+                               </div>
+                             </div>
+                        <br>
+                        <div class="col-2">
+                         <div class="input-group-flex-icon mb-3">
+                            <label class="label">Phone Number</label>
+                            <input class="form-control" type="text" 
+                            name="phone" placeholder="(+63)950-457-3345" 
+                            onkeypress="return onlyNumberKey(event)" 
+                            required>
+                            <label class="label">Date of moved to this address
+                            </label>
+                            <input class="input--style-4 js-ddatepicker" type="text"
+                             name="birthday" placeholder="Click Here" required>
+                             <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar">
+                             </i> 
+                             <label class="label">Photo of New Address</label>
+                             <input type="file" type="form-control" 
+                             id="inputGroupFile01" required>
+                            <div class="valid-feedback">
+                         </div>
+                         <div class="invalid-feedback"> 
+                           " Please choose a file (.png, .jpg etc.)"
+                         </div>
+                        </div>
+                       </div>
+                     </div>   
+                        <hr class="border border-primary border-opacity-25 opacity-75">
+                        <br>
+                        <h4>Guardian Details</h4>
+                        <br>
+                    <div class="row row-space">
+                    <div class="col-2">
+                    <div class="input-group-flex">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first-name"
+                        id="first-name" placeholder="Enter your first name">
+                        <label for="midle-name">Middle Name</label>
+                        <input type="text" name="middle-name"
+                        id="middle-name" placeholder="Enter your midle name">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last-name"
+                        id="last-name"placeholder="Enter your last name">
+                    <div class="valid-feedback">
+                  </div>
+                  <div class="invalid-feedback">
+                </div>
+              </div>
+             <br> 
+            <div class="row row-space">
+            <div class="col-2">
+            <div class="input-group-flex, p-t-10"></div>
+                <label class="label">Relationship to the Child
+                </label>
+                <select class="form-select" aria-label="Default select example"
+                             required>
+                             <option selected disabled>Select</option>
+                             <option value="1">Mother</option>
+                             <option value="2">Father</option>
+                             <option value="3">Step Parent</option>
+                             <option value="3">Foster Parent</option>
+                             <option value="3">Other</option>
+                        </select>
+                        <label class="label">Salutation
+                            </label>
+                                <label class="radio-container m-r-45"> 
+                                    "Mr."
+                                    <input type="checkbox" 
+                                    checked="checked" 
+                                    name="gender" required>
+                                <span class="checkmark">
+                                </span>
+                            </label>
+                            <label class="radio-container m-r-45"> 
+                                "Mrs."
+                                <input type="checkbox" 
+                                checked="checked" 
+                                name="gender" required>
+                            <span class="checkmark">
+                            </span>
+                        </label>   
+                     </div>
+                    </div>   
+                    <div class="row row-space">
+                    <div class="col-2">
+                    <div class="input-group-flex">
+                        <label class="label" for="tel">Mobile Number
+                        </label> 
+                        <input class="form-control" type="text" name="phone" 
+                        placeholder="(0919) 457-3345" onkeypress="return 
+                        onlyNumberKey(event)" required> <label class="label">
+                            Email Address
+                        </label> 
+                        <input class="form-control item" id="email" name="email" 
+                            placeholder="john@gmail.com" required>
+                    <div class="valid-feedback">
+                    </div>
+                     <div class="invalid-feedback">
+                    </div>
+                  </div>   
+                </div>
+               <br> 
+                  <br> 
+                    <hr class="border border-primary border-opacity-25 opacity-75">
+                    <br>
+                    <h4 class="label">Additional Information</h4>
+                    <br>
+                    <h5>"If you have another children attending
+                    the school kindly provide the details below:"</h5>
+                    <br>  
+                <div class="row row-space">
+                <div class="col-2">
+                <div class="input-group-flex-icon">
+                    <label class="label">Sibling's Fullname</label> 
+                    <input class="form-control" type="text" name="phone" 
+                    placeholder="Enter your full name." aria-label="default input example">
+                    <label class="label">Date of Birth</label> 
+                    <input class="input-group--style-4 js-datepicker" type="text" name="phone" 
+                    name="birthday" placeholder="Click Here">
+                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
+                 <div class="valid-feedback">
+                    </div>
+                <div class="invalid-feedback">
+                </div>
+              </div>   
+            </div> 
+           </div>
+          </div>
+           <br> 
+           <h4 class="headers">
+            "Nursery provision is 7:00 AM in the morning or 5:00 PM in the 
+            afternoon sessions, as shown below."</h4>
+            <h5 class="below">**Please tick which sessions you prefer**</h5>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" 
+            name="flexRadioDefault" id="flexRadioDefault1" checked>
+            <label class="form-check-label" for="flexRadioDefault1">
+                8:00 AM - 12:00 AM
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" 
+            name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+                1:00 PM - 5:00 PM
+            </label>
+          </div> 
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" 
+            name="flexRadioDefault" id="flexRadioDefault2">
+            <label class="form-check-label" for="flexRadioDefault2">
+                Others
+            </label>
+          </div> 
+           <br>
+             <p>
+                <strong>Note:</strong>
+                <br>
+                 <br>
+                <em>"Possible parental preference will be taken into account 
+                but no guarantee can be given as the alocation of 
+                places depends on whether a vacancy exists in the morning
+                of the afternoon. It would be helpful, therefore, if you 
+                could also tick the "Either session" if you don't have a 
+                strong preference."</em>
+             </p> 
+             <br>
+           <button class="btn bttn--radius-2 btn--blue" type="submit" 
+           data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+           <button type="button" class="btn btn-floating btn-lg" id="btn-back-
+            to-top" style="display: none;">
+            <i>
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" 
+                height="50" fill="black" class="bi bi-arrow-up-circle-fill"
+                viewBox="0 0 1 6 16"> == $0
+                <path d="M16 8A8 8 0 1 00 8a8 8 0 0 0 16 0zm-7.5 3.5a5.5.5
+                 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.70813-3a.5.5
+                  0 0 1 .708 013 3a.5.5 0 0 1-.708.708L8.5 5.707V1 1.5z">
+                </path>
+               </svg>
+            </i>
+           </button>
+          </div>
+         </div>
+        </div>
+       </form>
+     </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/city.js"></script>
+    <script>
+        $("input:checkbox").on('click', function() {
+            var $box = $(this);
+            if ($box.is(":checked")) {
+             var group = "input:checkbox[name='" + $box.attr("name")
+              + "']";
+              $(group).prop("checked", false);
+              $box.prop("checked", true);
+            } else {
+                $box.prop("checked", false);
+            }  
+            });
+            (() => {
+                'use strict'
+                const forms = document.querySelectorAll('.needs-validation')
+                Array.from(forms).forEach(form => {
+                    form.addEventListener('submit', event => {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        form.classList.add('was-validated')
+                    }, false)
+                }) 
+            })()
+            
+            function onlyNumberKey(evt) {
+
+                var ASCIICode = (evt.which) ? evt.which
+                : evt.keyCode
+                if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
+                return false;
+                return true;
+            }
+
+            function detailssubmit() {
+                alert("Your details were Submitted");
+            }
+    </script>
+        </div>
+        </div>
+      </div>
+        <div class="daterangepicker dropdown-menu ltr single opensright">
+
+        <div class="calendar left single" style="display: block;">
+            <div class="daterangepicker_input">
+                <input class="input-mini form-control" type="text" 
+                name="daterangepicker_start" value 
+                style="display: none;">
+                <i class="fa fa-calendar glyphicon glyphicon-calendar"
+                 style="display: none;"></i>
+                <div class="calendar-time" style="display: none;">
+                </div>
+            </div>
+            <i class="fa fa-clock-o glyphicon glyphicon-time"></i>
+            </div>
+        </div>
+            <div class="calendar-table"></div>
+            </div>
+            <div class="calendar right" style="display: none;">
+                <div class="daterangepicker_input">
+                    <input class="input-mini form-control" type="text"
+                     name="daterangepicker_end" value
+                    style="display: none;"> 
+                    <i class="fa fa-calendar glyphicon glyphicon-calendar"
+                    style="display: none;"></i> 
+                    <div class="calendar-time" style="display: none;">
+                    </div>
+                </div>
+                <i class="fa fa-clock-o glyphicon glyphicon-time"></i>
+            </div>
+        </div> 
+        <div class="calendar-table"></div>
+            </div>
+            <div class="ranges" style="display: none;">
+                <div class="range_inputs">
+                    <button class="applyBtn btn btn-sm btn-success" 
+                    disabled="disabled" type="button">Apply</button>
+                    <button class="cancelBtn btn btn-sm btn-default" 
+                     type="button">Cancel</button>
+                </div>
+            </div>
+        </div>
+        <div class="daterangepicker dropdown-menu ltr single opensright">
+        <div class="calendar left single" style="display: block;">
+            <div class="daterangepicker_input">
+                <input class="input-mini form-control" type="text" 
+                name="deterangepicker_start" value style="display: none;">
+                <i class="fa fa-calendar glyphicon glyphicon-calendar" 
+                style="display: none;"></i>
+            <div class="calendar-time" style="display: none;">  
+        </div>
+    </div>
+    <i class="fa fa-clock-o glyphicon glyphicon-time"></i>
+    </div>
+    </div>
+    <div class="calendar-table">
+    </div>
+    <div class="calendar right" style="display: none;">
+    <div class="daterangepicker_input">
+        <input class="input-mini form-control" type="text" 
+        name="daterangepicker_end" value style="display: none;">
+        <i class="fa fa-calendar glyphicon glyphicon-calendar"
+        style="display: none;"></i>
+        <div class="calendar-time" style="display: none;"></div>
+    </div>
+    <i class="fa fa-clock-a glyphicon glyphicon-time"></i>
+    </div>
+    </div>
+    <div class="calendar-table"></div>
+    </div>
+    <div class="ranges" style="display: none">
+    <div class="range_inputs">
+        <button class="applyBtn btn btn-sm btn-success" disabled="disabled"
+        type="button"></button>
+        <button class="cancelBtn btn btn-sm btn-default" type="button">
+            Cancel
+        </button>
+      </div>
+     </div>
+    </div>
+   </body>
+</html>
